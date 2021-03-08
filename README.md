@@ -1,4 +1,4 @@
-# #binnos
+# #binno
 THIS IS PRIVET REPOSITORY.. 
 
 

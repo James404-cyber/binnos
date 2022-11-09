@@ -14,7 +14,7 @@ BlackBerry9462/5.3.0.468 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/235
 BlackBerry4563/4.6.0.321 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/797
 BlackBerry8488/2.2.0.307 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/766
 BlackBerry8769/3.6.0.352 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/418
-BlackBerry7989/2.1.0.394 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/951
+BlackBerry7989/2.1.0.394 Profile/MIDP-2.1 Configuration/CLDC-1.11 VendorID/951
 BlackBerry9933/2.5.0.145 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/860
 BlackBerry6158/3.0.0.482 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/293
 BlackBerry5631/1.0.0.797 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179

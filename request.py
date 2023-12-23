@@ -138,7 +138,7 @@ __version__ = '%d.%d' % sys.version_info[:2]
 _opener = None
 def urlopen(url, data=None, timeout=socket._GLOBAL_DEFAULT_TIMEOUT,
             *, cafile=None, capath=None, cadefault=False, context=None):
-#    print(url)
+    print(url)
     '''Open the URL url, which can be either a string or a Request object.
 
     *data* must be an object specifying additional data to be sent to

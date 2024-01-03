@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>James Command</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<style>
+	.fa {
+		border-radius: 50px;
+  padding: 10px;
+  font-size: 50px;
+  width: 35;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: red;
+  color: white;}
+  
+  .fa-github {
+  background: brown;
+  color: white;
+}
+.fa-youtube {
+  background: red;
+  color: white;
+}
+textarea {
+  width: 100%;
+  height: 18em;
+  border-radius: 10px;
+  background: black;
+  color:white;
+}
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+
+@-webkit-keyframes text-flicker-in-glow{6%{opacity:0}10%{opacity:0;text-shadow:none}10.1%{opacity:1;text-shadow:none}10.2%{opacity:0;text-shadow:none}20%{opacity:0;text-shadow:none}20.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.25)}20.6%{opacity:0;text-shadow:none}30%{opacity:0;text-shadow:none}30.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.5%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.6%{opacity:0;text-shadow:none}45%{opacity:0;text-shadow:none}45.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}50%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55.1%{opacity:0;text-shadow:none}57%{opacity:0;text-shadow:none}57.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60.1%{opacity:0;text-shadow:none}65%{opacity:0;text-shadow:none}65.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75.1%{opacity:0;text-shadow:none}77%{opacity:0;text-shadow:none}77.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85.1%{opacity:0;text-shadow:none}86%{opacity:0;text-shadow:none}86.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}100%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}}@keyframes text-flicker-in-glow{0%{opacity:0}10%{opacity:0;text-shadow:none}10.1%{opacity:1;text-shadow:none}10.2%{opacity:0;text-shadow:none}20%{opacity:0;text-shadow:none}20.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.25)}20.6%{opacity:0;text-shadow:none}30%{opacity:0;text-shadow:none}30.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.5%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.6%{opacity:0;text-shadow:none}45%{opacity:0;text-shadow:none}45.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}50%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55.1%{opacity:0;text-shadow:none}57%{opacity:0;text-shadow:none}57.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60.1%{opacity:0;text-shadow:none}65%{opacity:0;text-shadow:none}65.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75.1%{opacity:0;text-shadow:none}77%{opacity:0;text-shadow:none}77.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85.1%{opacity:0;text-shadow:none}86%{opacity:0;text-shadow:none}86.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}100%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}}
+
+html, body {
+  background: black;
+  font-family: fantasy;
+}
+h1 {
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+}
+h2{
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color:white
+}
+img{
+	border: 1px solid white;}
+
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="row">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<center><br>
+<a href="https://www.facebook.com/shawal.arshad.96?mibextid=eHce3h" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/james404cyber_?igsh=OGY3MTU3OGY1Mw==" class="fa fa-instagram"></a>
+<a href="https://github.com/James404-cyber" class="fa fa-github"></a>
+<a href="https://youtube.com/@Mr.James404?si=70mJaRPRRPkRO8pW" class="fa fa-youtube"></a>
+<a href="https://chat.whatsapp.com/%2B96598064347" class="fa fa-whatsapp"></a>
+<center>
+    <div class="col-xs-12 input-area">
+      <h1>JAMES UPDATE TOOLS</h1>
+      <h2>[+] All Required Pkg</h2>
+      
+    </div>
+    <center>
+    <div class="col-xs-12 col-sm-6 input-area">
+      <div class="form-group">
+        
+        <textarea id="output">
+[👉] At First Go To Termux And Run Those pkg
+[👉] If You Are New In Termux
+ pkg update && pkg upgrade
+ or 
+ apt update && apt upgrade 
+ pkg install python
+ pkg install python2
+ pkg install wget
+ pip install requests
+ pip install mechanize
+ pip install bs4
+ pkg install git
+</textarea>
+
+ 
+    <h1>[1] HACKPRO TOOLS</h1>
+      
+    </div>
+    <center>
+    <div class="col-xs-12 col-sm-6 input-area">
+      <div class="form-group">
+        
+        <textarea id="output">  
+ cd
+ rm -rf HACKPRO
+ pkg install git
+ git clone https://github.com/James404-cyber/HACKPRO.git
+ cd HACKPRO
+ python Prohack.py
+</textarea>
+
+      </div>
+
+      <div class="form-group">
+        <button type="button" id="copy" class="btn btn-default">Copy to clipboard</button>
+      </div><h2> HACKPRO TOOL SCREENSHOT</h2>
+      <center><a href="https://raw.githubusercontent.com/earningonline230/Store1/96006a53f4c7fb45ac608fc2e4923115fbc8f416/Screenshot_20240103_141010.jpg" rel="nofollow"><img src="https://raw.githubusercontent.com/earningonline230/Store1/96006a53f4c7fb45ac608fc2e4923115fbc8f416/Screenshot_20240103_141010.jpg" alt="Image" style="border-radius: 2px;width: 99%; height: auto; margin: 0 auto; padding: 5px 0;"></a></center>
+    </div>
+    <h1>[2] FILEPRO TOOL</h1>
+      
+    </div>
+    <center>
+    <div class="col-xs-12 col-sm-6 input-area">
+      <div class="form-group">
+        
+        <textarea id="output">
+     
+ cd
+rm -rf FILEPRO
+git clone https://github.com/James404-cyber/FILEPRO.git
+cd FILEPRO
+python Filepro.py
+</textarea>
+
+      </div>
+
+      <div class="form-group">
+        <button type="button" id="copy" class="btn btn-default">Copy to clipboard</button>
+      </div><h2>FILEPRO TOOL SCREENSHOT</h2>
+      <center><a href="https://raw.githubusercontent.com/earningonline230/Store1/main/Screenshot_20240103_142217.jpg" rel="nofollow"><img src="https://raw.githubusercontent.com/earningonline230/Store1/main/Screenshot_20240103_142217.jpg" alt="Image" style="border-radius: 2px;width: 99%; height: auto; margin: 0 auto; padding: 5px 0;"></a></center>
+    </div>
+    <h1[3] MULTI-CRACK TOOL</h1>
+      
+    </div>
+    <center>
+    <div class="col-xs-12 col-sm-6 input-area">
+      <div class="form-group">
+        
+        <textarea id="output">
+     
+cd
+rm -rf Multi-Crack
+git clone https://github.com/James404-cyber/Multi-Crack.git
+cd Multi-Crack
+python Facebook.py
+</textarea>
+
+      </div>
+
+      <div class="form-group">
+        <button type="button" id="copy" class="btn btn-default">Copy to clipboard</button>
+      </div><h2> MULTI-CRACK TOOL SCREENSHOT</h2>
+      <center><a href="https://raw.githubusercontent.com/earningonline230/Store1/ecf0c8992f2b29a0f535b6428a836a7590f217fc/Gallery_1704278380382.jpg" rel="nofollow"><img src="https://raw.githubusercontent.com/earningonline230/Store1/ecf0c8992f2b29a0f535b6428a836a7590f217fc/Gallery_1704278380382.jpg" alt="Image" style="border-radius: 2px;width: 99%; height: auto; margin: 0 auto; padding: 5px 0;"></a></center>
+    </div>
+    <h1>[4] USERCRACK TOOLS</h1>
+      
+    </div>
+    <center>
+    <div class="col-xs-12 col-sm-6 input-area">
+      <div class="form-group">
+        
+        <textarea id="output">
+     
+ cd
+ rm -rf UserCrack
+git clone --depth=1 https://github.com/James404-cyber/UserCrack.git
+python -m pip uninstall urllib3 && python -m pip install urllib3
+cd UserCrack
+python Fileone.py
+</textarea>
+
+      </div>
+
+      <div class="form-group">
+        <button type="button" id="copy" class="btn btn-default">Copy to clipboard</button>
+      </div><h2> USERCRACK TOOL SCREENSHOT</h2>
+      <center><a href="https://raw.githubusercontent.com/earningonline230/Store1/main/Gallery_1704278785501.jpg" rel="nofollow"><img src="https://raw.githubusercontent.com/earningonline230/Store1/main/Gallery_1704278785501.jpg " alt="Image" style="border-radius: 2px;width: 99%; height: auto; margin: 0 auto; padding: 5px 0;"></a></center>
+    </div>
+    
+    <h1>[5] PROHACK TOOLS</h1>
+      
+    
+    </div>
+    <center>
+    <div class="col-xs-12 col-sm-6 input-area">
+      <div class="form-group">
+        
+        <textarea id="output">
+ 
+      
+        
+cd
+rm -rf PROHACK
+git clone https://github.com/James404-cyber/PROHACK.git
+python -m pip uninstall urllib3 && python -m pip install urllib3
+cd PROHACK
+python prohack.py
+</textarea>
+
+      </div>
+
+      <div class="form-group">
+        <button type="button" id="copy" class="btn btn-default">Copy to clipboard</button>
+      </div><h2> PROHACK TOOL SCREENSHOT</h2>
+      <center><a href="https://raw.githubusercontent.com/earningonline230/Store1/main/Gallery_1704279411783.jpg" rel="nofollow"><img src="https://raw.githubusercontent.com/earningonline230/Store1/e25bd582fbffb1ba8bec337b46b18f31a7edaa3a/Screenshot_20240103_142217.jpg" alt="Image" style="border-radius: 2px;width: 99%; height: auto; margin: 0 auto; padding: 5px 0;"></a></center>
+    </div>
+
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script>
+$("#copy").click(function(){
+    $("#output").focus();
+    $("#output").select();
+    try {
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'successful' : 'unsuccessful';
+      console.log('Copying text command was ' + msg);
+    } catch (err) {
+      console.log('Oops, unable to copy');
+    }
+  });
+  const target = window.document.getElementsByTagName('h1')[0]
+
+const flickerLetter = letter => `<span style="animation: text-flicker-in-glow ${Math.random()*4}s linear both ">${letter}</span>`
+const colorLetter = letter => `<span style="color: hsla(${Math.random()*360}, 100%, 80%, 1);">${letter}</span>`;
+const flickerAndColorText = text => 
+  text
+    .split('')
+    .map(flickerLetter)
+    .map(colorLetter)
+    .join('');
+const neonGlory = target => target.innerHTML = flickerAndColorText(target.textContent);
+
+
+neonGlory(target);
+target.onclick = ({ target }) =>  neonGlory(target);
+</script>
+<br><br>
+	
+	<center><p style="color: green ;">Contact on WhatsApp to buy Paid tool </p></center>
+	<a style="background: pink; "href="https://chat.whatsapp.com/ETLUOBqP5NwF1otkkqC4Ff">Join WhatsApp Group</a>  <br>
+		
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+
+
+
+</body>
+</html>
+	
+</body>
+</html>
